@@ -50,7 +50,7 @@ background_3 = "*"
 background_4 = "-"
 background_5 = " "
 
-allPartyHatStyles = [phat_style_1, phat_style_2]
+allPartyhatStyles = [phat_style_1, phat_style_2]
 allBackgroundStyles = [defaultBackground,background_5]
 
 def CreatePartyHat(background,partyHatStyle,primaryHatColor,secondaryHatColor,backgroundColor):
@@ -65,10 +65,10 @@ def CreatePartyHat(background,partyHatStyle,primaryHatColor,secondaryHatColor,ba
 def OpenPresent(n):
     for i in range(n):
         CreatePartyHat(np.random.choice(allBackgroundStyles),
-                        np.random.choice(allPartyHatStyles),
+                        np.random.choice(allPartyhatStyles),
                         np.random.choice(allColors),
                         np.random.choice(allColors),
                         np.random.choice(allColors)
                         )
 
-OpenPresent(100)
+OpenPresent(10)
